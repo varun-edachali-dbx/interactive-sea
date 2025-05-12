@@ -45,7 +45,10 @@ def run_query(
     
 def main(disposition: Disposition, format: Format, output_dir: str):
     if format != Format.JSON:
-        print("Error: JSON format is not supported")
+        print("Error: only JSON format is supported")
+        return
+    if disposition != Disposition.INLINE:
+        print("Error: only INLINE disposition is supported")
         return
 
     if not os.path.exists(output_dir):

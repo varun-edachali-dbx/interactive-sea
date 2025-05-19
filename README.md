@@ -7,4 +7,4 @@ add DATABRICKS_HOST (hostname), DATABRICKS_TOKEN (PAT) and DATABRICKS_SQL_WAREHO
 
 then, simply run `python3 src/main.py`. 
 
-requirements in `requirements.txt`
+requirements in `requirements.txt`.
